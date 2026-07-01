@@ -23,7 +23,7 @@ log = logging.getLogger(__name__)
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 DATASET_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dataset")
-SOURCE_FILE = os.path.join(DATASET_DIR, "bank_transactions_data_2.csv")
+SOURCE_FILE = os.path.join(DATASET_DIR, "transactions.csv")
 
 TABLE_NAME = "trx_sample"
 
@@ -103,7 +103,7 @@ def transform(df: pd.DataFrame) -> pd.DataFrame:
         "TransactionDuration"     : "transaction_duration",
         "LoginAttempts"           : "login_attempts",
         "AccountBalance"          : "account_balance",
-        "PreviousTransactionDate" : "previous_transaction_date",
+        "PreviousTransactionDate" : "previous_transaction_date"
     })
 
     # Cast tipe data
