@@ -327,9 +327,7 @@ print(f"    -> {len(df_transactions)} rows  |  {OUTPUT_DIR}/transactions.csv")
 # ══════════════════════════════════════════════════════════════════
 # 7. FRAUD LABELS  (~1% of SUCCESS transactions)
 # ══════════════════════════════════════════════════════════════════
-print("\n[7/7] Generating fraud_labels.csv ...")
-
-FRAUD_TYPES = ["CARD_SKIMMING","PHISHING","ACCOUNT_TAKEOVER",
+D_SKIMMING","PHISHING","ACCOUNT_TAKEOVER",
                "UNUSUAL_AMOUNT","VELOCITY_ABUSE","SIM_SWAP"]
 
 rows_fraud = []
@@ -346,7 +344,9 @@ for row in rows_trx:
 
 df_fraud = pd.DataFrame(rows_fraud)
 df_fraud.to_csv(f"{OUTPUT_DIR}/fraud_labels.csv", index=False)
-print(f"    -> {len(df_fraud)} rows  |  {OUTPUT_DIR}/fraud_labels.csv")
+print(f"    -> {len(df_fraud)} rows  |  {OUTPUT_DIR}/fraprint("\n[7/7] Generating fraud_labels.csv ...")
+
+FRAUD_TYPES = ["CARud_labels.csv")
 
 
 # ══════════════════════════════════════════════════════════════════
