@@ -1,3 +1,8 @@
+Nama: Sri Wahyuni Ningtiyas
+Batch 1 Data Engineering
+Query pertanyaan bisnis ada di file .zip
+
+
 # Final Project Data Pipeline — BNI Corpu
 
 Repo ini berisi materi dan hands-on project **ETL Pipeline dengan Apache Airflow v3 + PostgreSQL** menggunakan Docker Compose.
